@@ -24,11 +24,11 @@
 
 点击右上角的Fork，并选择你的账号（一般在第一个）。就可以Fork团队项目到个人仓库啦。
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7ksx049tj20u70afgmc.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7ksx049tj20u70afgmc.jpg)
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7ktfkmyej20ef07ut9e.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7ktfkmyej20ef07ut9e.jpg)
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7ku5k9v3j20se06vaae.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7ku5k9v3j20se06vaae.jpg)
 
 ## 三、Clone项目到本地
 
@@ -54,13 +54,13 @@ git clone https://github.com/ronething/notes.git myproject
 
 克隆完成后发现本地只有`master`分支，用`git branch`可以查看。
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7l2mjgbej20cd01ca9t.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7l2mjgbej20cd01ca9t.jpg)
 
 此时只有`master`一个分支。
 
 用`git branch -a`可以查看所有分支，包括远程分支。
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7l419guhj20c802m742.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7l419guhj20c802m742.jpg)
 
 发现有`origin/dev`分支。
 
@@ -70,7 +70,7 @@ git clone https://github.com/ronething/notes.git myproject
 
 再次使用`git branch`
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7l6myqh5j20ff03gdfn.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7l6myqh5j20ff03gdfn.jpg)
 
 如果要切换回`master`分支，使用`git checkout master`
 
@@ -78,13 +78,13 @@ git clone https://github.com/ronething/notes.git myproject
 
 首先查看有没有设置  `upstream`，使用`git remote -v`命令来查看。
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7l8pfxgoj20d1021t8i.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7l8pfxgoj20d1021t8i.jpg)
 
 发现并没有。
 
 如果没有显示`upstream`，则使用 `git remote add upstream 团队项目地址`添加
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7lag23cjj20hx047a9x.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7lag23cjj20hx047a9x.jpg)
 
 开始同步。首先执行 `git fetch upstream` 获取团队项目最新版本
 
@@ -98,23 +98,23 @@ git clone https://github.com/ronething/notes.git myproject
 
 注意，在当前所在分支使用push，会push到与这个分支相关联的远程仓库分支。这里dev分支与origin/dev关联，因此push到GitHub上的dev分支。
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7liqvsrej20it0lmt9r.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7liqvsrej20it0lmt9r.jpg)
 
 ## 六、请求合并到团队项目上
 
 首先到你的GitHub上，进入你Fork的仓库里。点击箭头处的Pull request
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7ljvnsq7j20td0dfmy8.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7ljvnsq7j20td0dfmy8.jpg)
 
 下图左边，表示要合并到ssm-scauGroup/git-learn项目的dev分支。
 下图右边，表示要从自己仓库的dev分支发起合并请求。
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7lm3k32zj20u70hv400.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7lm3k32zj20u70hv400.jpg)
 
 点击`Create pull request`就可以发送合并请求了。
 
 然后就会显示如下界面。接着就等着负责人`merge pull request` 了。
 
-![](https://ws1.sinaimg.cn/large/ecb0a9c3gy1ft7lrgvuk7j20rz0ck75l.jpg)
+![](https://wx1.sinaimg.cn/large/ecb0a9c3gy1ft7lrgvuk7j20rz0ck75l.jpg)
 
 ## 七、团队项目负责人审核及同意合并请求
